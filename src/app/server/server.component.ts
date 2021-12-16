@@ -6,12 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./server.component.css']
 })
 export class ServerComponent implements OnInit {
-  serverId: number = 10;
-  serverStatus: string = 'offline';
+  username: string = '';
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  onResetButtonClick() {
+    this.username = '';
+  }
 }
